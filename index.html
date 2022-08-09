@@ -106,7 +106,28 @@
             See you soon, Dean
           </p>
           <div class="btns">
-            <button>Pray for me, Dean</button>
+            <button onclick='doAction()'>Pray for me, Dean</button>
+            <script>
+    
+              let clickState = 0;
+          
+              function doAction() {
+                  clickState++;
+                
+                  if (clickState ==1 ) {
+                      parent.open('https://archiveofourown.org/works/40918722');
+                  } else if (clickState == 2 ) {
+                      parent.open('https://archiveofourown.org/works/39171972');
+                  } else if (clickState == 3 ) {
+                      parent.open('  https://archiveofourown.org/works/40087425/chapters/100396797');
+                  } else if (clickState == 4 ) {
+                      // Do something...
+                      // then reset clickState for the next go round
+                      clickState=0;
+                  } 
+          
+              }
+          </script>
             <button>I will listen, I always do</button>
           </div>
         </div>
