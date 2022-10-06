@@ -13,12 +13,12 @@
 
 
     <title>Hello, Dean</title>
-     <!-- NAVBAR
+     <!-- codigo de esa vaina favicon
     <link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
  -->
- <link rel="icon" type="image/png"  href="/favicons/favicon-16x16.png">
+ <link rel="icon" type="image/png"  href="img/favicons/favicon-16x16.png">
 
 </head>
 
@@ -333,7 +333,21 @@
                                 eCommerce Store</li>
                             <li><i class='bx bxs-check-circle'></i>Wordpress plugins</li>
                         </ul>
-                        <button class="btn btn-primary">Get Started</button>
+                        <a href='javascript:openUrl()' class="btn me-2 btn-primary">Get the fics!</a>
+                        <!--SCRIPT PARA ENVIAR A DIFERENTES FICS----->
+                        <script>
+                            var sites=['http://www.google.com/',
+                            'http://www.msn.com/',
+                            'http://www.yahoo.com/'
+                            ];
+                            
+                            function openUrl(){
+                                
+                                var i = Math.round(Math.random()*(sites.length-1));
+                                window.location.href=sites[i];
+                                return false;
+                            }
+                            </script>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
